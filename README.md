@@ -33,18 +33,21 @@ Build a system that:
 
 ---
 
-### 3. Decision Engine
+## System Design
 
-Rule-based system using:
-- stress level
-- energy level
-- sleep
+The system follows a 3-layer architecture:
 
-Examples:
-- High stress + low energy → rest
-- High energy + low stress → deep work
-- High stress → breathing
+1. Perception Layer  
+   - Text understanding using TF-IDF  
+   - Context signals from metadata  
 
+2. Reasoning Layer  
+   - ML model predicts emotional state and intensity  
+
+3. Decision Layer  
+   - Rule-based logic converts predictions into actionable recommendations  
+
+This design ensures both predictive accuracy and meaningful guidance.
 ---
 
 ### 4. Uncertainty Handling
